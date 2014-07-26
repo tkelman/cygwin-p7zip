@@ -19,3 +19,7 @@ build_script:
       g++ --version;
       cd /cygdrive/c/projects/cygwin-p7zip;
       cygport p7zip-9.20.1-1 all"
+
+artifacts:
+  - path: 'p7zip-*\dist\p7zip\p7zip-*'
+  - path: 'p7zip-*\dist\p7zip\setup.hint'
