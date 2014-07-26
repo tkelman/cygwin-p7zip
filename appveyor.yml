@@ -1,0 +1,21 @@
+#environment:
+#  matrix:
+#  - VERSION: "32"
+#  - VERSION: "64"
+
+init:
+# Carriage returns are bad
+  - git config --global core.autocrlf input
+
+install:
+  - choco install cyg-get
+  - set PATH=%PATH%;C:\cygwin
+  - "cyg-get cygport >> cyg-get.log"
+  - "cyg-get gcc-g++ >> cyg-get.log"
+
+build_script:
+  - C:\cygwin\bin\sh -lc "uname -a;
+      cygport --version;
+      g++ --version;
+      cd /cygdrive/c/projects/cygwin-p7zip;
+      cygport p7zip-9.20.1-1 all"
