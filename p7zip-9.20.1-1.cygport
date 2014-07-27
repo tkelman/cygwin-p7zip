@@ -3,6 +3,11 @@ HOMEPAGE="http://www.7-zip.org/"
 SRC_URI="mirror://sourceforge/p7zip/${PN}_${PV}_src_all.tar.bz2"
 SRC_DIR=${PN}_${PV}
 
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	dos2unix man1/7zr.1
+}
+
 # derived from http://patch-tracking.debian.net/
 #  /patch/series/dl/p7zip/9.04~dfsg.1-1/
 PATCH_URI="
