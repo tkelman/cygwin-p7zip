@@ -47,7 +47,5 @@ src_install() {
 	dobin ${S}/contrib/gzip-like_CLI_wrapper_for_7z/p7zip
 	insinto /usr/share/man/man1
 	doins ${S}/contrib/gzip-like_CLI_wrapper_for_7z/man1/p7zip.1
-
-	keepdir /usr/lib/${PN}/Codecs
 }
 
