@@ -21,7 +21,8 @@ src_compile() {
 	lndirs
 	cd ${B}
 	rm -f makefile.machine
-	cp makefile.cygwin makefile.machine
+	[ ${ARCH} = "i686" ] && cp makefile.cygwin_asm makefile.machine
+	[ ${ARCH} = "x86_64" ] && cp makefile.cygwin makefile.machine
 	cygmake -j1 all3
 }
 
