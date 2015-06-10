@@ -1,5 +1,5 @@
---- origsrc/p7zip_9.20.1/CYGWIN-PATCHES/setup.hint	1969-12-31 19:00:00.000000000 -0500
-+++ src/p7zip_9.20.1/CYGWIN-PATCHES/setup.hint	2011-06-26 17:43:43.995000000 -0400
+--- origsrc/p7zip_9.38.1/CYGWIN-PATCHES/setup.hint	1969-12-31 19:00:00.000000000 -0500
++++ src/p7zip_9.38.1/CYGWIN-PATCHES/setup.hint	2011-06-26 17:43:43.995000000 -0400
 @@ -0,0 +1,8 @@
 +category: Archive
 +requires: bash libgcc1 libstdc++6
