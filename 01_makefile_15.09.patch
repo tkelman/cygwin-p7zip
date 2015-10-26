@@ -1,12 +1,11 @@
-diff -urN origsrc//p7zip_9.38.1/makefile src//p7zip_9.38.1/makefile
---- origsrc//p7zip_9.38.1/makefile	2011-03-13 07:52:45.000000000 -0400
-+++ src//p7zip_9.38.1/makefile	2011-06-26 16:25:33.265000000 -0400
-@@ -56,7 +56,6 @@
+diff -urN origsrc//p7zip_15.09/makefile src//p7zip_15.09/makefile
+--- origsrc//p7zip_15.09/makefile	2011-03-13 07:52:45.000000000 -0400
++++ src//p7zip_15.09/makefile	2011-06-26 16:25:33.265000000 -0400
+@@ -56,6 +56,5 @@
  	$(MAKE) -C CPP/7zip/UI/Client7z           depend
  	$(MAKE) -C CPP/7zip/UI/Console            depend
  	$(MAKE) -C CPP/7zip/Bundles/Format7zFree  depend
 -	$(MAKE) -C CPP/7zip/Compress/Rar          depend
- 	$(MAKE) -C check/my_86_filter             depend
  	$(MAKE) -C CPP/7zip/UI/GUI                depend
  	$(MAKE) -C CPP/7zip/UI/FileManager        depend
 @@ -68,7 +67,6 @@
@@ -25,15 +24,15 @@ diff -urN origsrc//p7zip_9.38.1/makefile src//p7zip_9.38.1/makefile
  	$(MAKE) -C CPP/7zip/Bundles/LzmaCon      clean2
  	$(MAKE) -C CPP/7zip/Bundles/AloneGCOV    clean
  	$(MAKE) -C CPP/7zip/TEST/TestUI          clean
-diff -urN origsrc//p7zip_9.38.1/makefile.machine src//p7zip_9.38.1/makefile.machine
---- origsrc//p7zip_9.38.1/makefile.machine	2011-03-13 07:54:57.000000000 -0400
-+++ src//p7zip_9.38.1/makefile.machine	2011-06-26 16:26:33.595000000 -0400
+diff -urN origsrc//p7zip_15.09/makefile.machine src//p7zip_15.09/makefile.machine
+--- origsrc//p7zip_15.09/makefile.machine	2011-03-13 07:54:57.000000000 -0400
++++ src//p7zip_15.09/makefile.machine	2011-06-26 16:26:33.595000000 -0400
 @@ -4,13 +4,13 @@
  
- OPTFLAGS=-O
+-OPTFLAGS=-O -s
++OPTFLAGS=-O
  
--ALLFLAGS=${OPTFLAGS} -pipe -s \
-+ALLFLAGS=${OPTFLAGS} -pipe \
+ ALLFLAGS=${OPTFLAGS} -pipe \
      	-D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE \
  	-DNDEBUG -D_REENTRANT -DENV_UNIX \
  	-D_7ZIP_LARGE_PAGES \

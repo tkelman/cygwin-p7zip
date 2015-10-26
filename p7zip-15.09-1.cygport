@@ -11,7 +11,7 @@ src_unpack_hook() {
 # derived from http://patch-tracking.debian.net/
 #  /patch/series/dl/p7zip/9.04~dfsg.1-1/
 PATCH_URI="
-	01_makefile_9.38.1.patch
+	01_makefile_15.09.patch
 	02_man_9.20.1.patch
 	03_respect-umask-partial_9.20.1.patch
 	04_const_ustring_9.38.1.patch
