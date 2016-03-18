@@ -1,5 +1,5 @@
---- origsrc/p7zip_15.09/contrib/gzip-like_CLI_wrapper_for_7z/p7zip	2007-07-25 15:10:47.000000000 -0400
-+++ src/p7zip_15.09/contrib/gzip-like_CLI_wrapper_for_7z/p7zip	2011-06-26 17:43:45.555000000 -0400
+--- origsrc/p7zip_15.14/contrib/gzip-like_CLI_wrapper_for_7z/p7zip	2007-07-25 15:10:47.000000000 -0400
++++ src/p7zip_15.14/contrib/gzip-like_CLI_wrapper_for_7z/p7zip	2011-06-26 17:43:45.555000000 -0400
 @@ -1,4 +1,4 @@
 -#!/bin/sh
 +#!/bin/bash
@@ -25,8 +25,8 @@
      *)
  	doit ${compress} "$1"
          file="$1"
---- origsrc/p7zip_15.09/install.sh	2011-03-16 15:32:56.000000000 -0400
-+++ src/p7zip_15.09/install.sh	2011-06-26 17:43:45.565000000 -0400
+--- origsrc/p7zip_15.14/install.sh	2011-03-16 15:32:56.000000000 -0400
++++ src/p7zip_15.14/install.sh	2011-06-26 17:43:45.565000000 -0400
 @@ -3,27 +3,28 @@
  installShared()
  {
@@ -169,8 +169,8 @@
  then
    use_lang="o"
  fi
---- origsrc/p7zip_15.09/makefile	2011-06-26 17:43:21.089000000 -0400
-+++ src/p7zip_15.09/makefile	2011-06-26 17:43:45.570000000 -0400
+--- origsrc/p7zip_15.14/makefile.common	2011-06-26 17:43:21.089000000 -0400
++++ src/p7zip_15.14/makefile.common	2011-06-26 17:43:45.570000000 -0400
 @@ -1,10 +1,10 @@
  MKDIR = mkdir -p
  
@@ -182,10 +182,10 @@
 -DEST_MAN=$(DEST_HOME)/man
 +DEST_MAN=$(DEST_HOME)/share/man
  
- .PHONY: default all all2 7za 7zG 7zFM sfx 7z 7zr Client7z common common7z clean tar_bin depend test test_7z test_7zr test_7zG test_Client7z all_test app
+ .PHONY: default all all2 7za 7zG 7zFM sfx 7z 7zr Client7z common common7z LangAndHelp tar_bin depend test test_7z test_7zr test_7zG test_Client7z LzmaCon test_LzmaCon  all_test app cppcheck lzham test_lib other
  
---- origsrc/p7zip_15.09/makefile.cygwin_asm	2007-08-08 05:13:41.000000000 -0400
-+++ src/p7zip_15.09/makefile.cygwin_asm	2011-06-26 17:43:45.576000000 -0400
+--- origsrc/p7zip_15.14/makefile.cygwin_asm	2007-08-08 05:13:41.000000000 -0400
++++ src/p7zip_15.14/makefile.cygwin_asm	2011-06-26 17:43:45.576000000 -0400
 @@ -10,7 +10,7 @@ ALLFLAGS=${OPTFLAGS} -s \
  CXX=g++ $(ALLFLAGS)
  CC=gcc $(ALLFLAGS)
