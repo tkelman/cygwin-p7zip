@@ -3,7 +3,7 @@ SRC_URI="mirror://sourceforge/p7zip/${PN}_${PV}_src_all.tar.bz2"
 SRC_DIR=${PN}_${PV}
 
 CATEGORY="Archive"
-SUMMARY="A file archiver with very high compression ratios."
+SUMMARY="A file archiver with very high compression ratios"
 DESCRIPTION="p7zip is the Unix port of 7-Zip, a file archiver that
 archives with very high compression ratios.  It supports
 packing/unpacking 7z, zip, gzip bzip2, xz, tar, and wim archives.  It
